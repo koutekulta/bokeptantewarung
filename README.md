@@ -1,2 +1,1 @@
-# bokeptantewarung
-bokeptantewarung
+# [bokeptantewarung](https://bokeptantewarung.pages.dev)
