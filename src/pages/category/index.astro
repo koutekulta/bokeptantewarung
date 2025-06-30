@@ -48,8 +48,8 @@ const categories = Object.keys(categoryData)
   .sort((a, b) => a.name.localeCompare(b.name)); // Urutkan berdasarkan nama kategori
 
 const breadcrumbs = [
-  { name: 'Home', url: '/' },
-  { name: 'Category', url: '/category/' },
+  { name: 'Home', url: `${url}` },
+  { name: 'Category', url: `${url}/category/` },
 ];
 ---
 
@@ -88,7 +88,8 @@ const breadcrumbs = [
               <div class="category-thumbnail-wrapper">
                 <img
                   src={category.thumbnail}
-                  alt={`Thumbnail untuk kategori ${category.name}`}
+                  alt={`Thumbnail untuk category ${category.name}`}
+                  title={`Thumbnail category ${category.name}`}
                   loading="lazy"
                   width="300" height="169" />
               </div>
